@@ -1,0 +1,13 @@
+h1 {
+    font-size: 280%;
+    font-weight: bold;
+}
+
+#busy {
+    padding: 200px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

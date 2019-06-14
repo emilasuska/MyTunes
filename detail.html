@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MyTunes</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="getQueryParameter.js"></script>
+        <script src="detail.js"></script>
+    </head>
+
+    <body class="w3-center w3-light-gray">
+        <h1>MyTunes 🎧</h1>
+
+        <div id="busy" hidden>
+            <img src="https://loading.io/spinners/fidget-spinner/index.fidget-spinner.gif"/>
+        </div>
+
+        <table class="w3-auto w3-table w3-bordered w3-card-4 w3-large w3-white" hidden>
+            <tbody>
+                <tr>
+                    <td width="430" rowspan="99">
+                        <a id="itunesLink" target="_blank">
+                            <img id="albumArt" width="420" height="420"></img>
+                        </a>
+                    </td>
+                    <th>Song Rank</th>
+                    <td id="songRank"></td>
+                </tr>
+                <tr>
+                    <th>Artist Name</th>
+                    <td id="artistName"></td>
+                </tr>
+                <tr>
+                    <th>Song Name</th>
+                    <td id="songName"></td>
+                </tr>
+                <tr>
+                    <th>Audio Preview</th>
+                    <td id="audioPreview"></td>
+                </tr>
+                <tr>
+                    <th>Album Name</th>
+                    <td id="albumName"></td>
+                </tr>
+                <tr>
+                    <th>Release Date</th>
+                    <td id="releaseDate"></td>
+                </tr>
+                <tr>
+                    <th>Track Time</th>
+                    <td id="trackTime"></td>
+                </tr>
+                <tr>
+                    <th>Genre</th>
+                    <td id="genre"></td>
+                </tr>
+                <tr>
+                    <th>Explicitness</th>
+                    <td id="trackExplicitness"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+
+        <button id="backButton" class="w3-button w3-large w3-round w3-teal">Back to List</button>
+    </body>
+</html>

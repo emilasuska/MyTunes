@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MyTunes</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="getQueryParameter.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body class="w3-center w3-light-gray">
+        <h1>MyTunes 🎧</h1>
+
+        <div class="w3-xlarge">
+            <label>🔍 Search for:</label>
+            <input id="searchTerm" type="text" placeholder="Artist/Song/Album">
+
+            <label>Max results:</label>
+            <select id="numberOfResults">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+            </select>
+
+            <button id="submitButton" class="w3-button w3-large w3-round w3-teal">Search</button>
+        </div>
+
+        <br/>
+
+        <div id="busy" hidden>
+            <img src="https://loading.io/spinners/fidget-spinner/index.fidget-spinner.gif"/>
+        </div>
+
+        <div id="results" hidden>
+            <table class="w3-auto w3-table w3-bordered w3-card-4 w3-large w3-white w3-hoverable">
+                <thead class="w3-teal">
+                    <tr>
+                        <th>Song Rank</th>
+                        <th>Artist Name</th>
+                        <th>Song Name</th>
+                        <th>Audio Preview</th>
+                        <th>Album Name</th>
+                        <th>Album Art</th>
+                    </tr>
+                </thead>
+                <tbody id="rows">
+                </tbody>
+            </table>
+        </div>
+
+        <br/>
+
+        <div class="w3-center error">
+            <div id="apiError" hidden>An error occurred while searching.</div>
+            <div id="noResultsError" hidden>No matching results found.</div>
+        </div>
+
+    </body>
+</html>
